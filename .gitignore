@@ -4,4 +4,5 @@ __pycache__/
 *.pt
 .ipynb_checkpoints/
 .DS_Store
+*.zip
 
