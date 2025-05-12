@@ -64,23 +64,28 @@ project-root/
 
 | No | タスク名                           | 工数(h) | 予定日  | 実施日  | ステータス | 備考 |
 |----|------------------------------------|---------|---------|---------|------------|------|
-| 1  | GTSRBのデータDLと展開とWBS作成             | 1.0     | 5/12    | 5/12    | ✅ 完了     | Kaggleより取得・解凍 |
+| 1  | GTSRBのデータDLと展開とWBS作成    | 1.0     | 5/12    | 5/12    | ✅ 完了     | Kaggleより取得・解凍 |
 | 2  | データ可視化・EDA                 | 3.0     | 5/13    | -       | 🔜 未着手   | クラス分布、画像数など |
 | 3  | モデル構築（PyTorch）             | 4.0     | 5/13    | -       | 🔜 未着手   | 軽量CNNを設計 |
 | 4  | モデル学習＆TorchScript保存       | 4.0     | 5/14    | -       | 🔜 未着手   | `.pt`形式で保存 |
 | 5  | C++で画像前処理（OpenCV）         | 3.0     | 5/14    | -       | 🔜 未着手   | リサイズ、正規化など |
 | 6  | C++で推論実装（libtorch）         | 4.0     | 5/15    | -       | 🔜 未着手   | モデル読込と分類 |
 | 7  | 前処理＋推論の統合＆動作確認     | 3.0     | 5/15    | -       | 🔜 未着手   | 通しで画像→結果まで |
-| 8  | 成果物整理（GitHubで公開） | 2.0     | 5/15    | -       | 🔜 未着手   | 実行方法・スクショなど掲載 |
+| 8  | 成果物整理（GitHubで公開）        | 2.0     | 5/15    | -       | 🔜 未着手   | 実行方法・スクショなど掲載 |
 
 ---
 
 ## 📌 補足
 
-- データ：GTSRB（[Kaggleリンク](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign)）
 - Python環境は仮想環境で管理（`venv/`）
 - モデルは `.pt` に保存し、C++からlibtorchで読み込み予定
 
+## 🔽 データの入手方法
+
+本プロジェクトで使用しているデータセットは Kaggle にて公開されています：
+- [GTSRB - German Traffic Sign Recognition Benchmark](https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign)
+
+上記ページから `gtsrb-german-traffic-sign.zip` をダウンロードし、展開後、`data/` フォルダとしてプロジェクト直下に配置してください。
 ---
 
 ## 📈 実行例・成果物（予定）
